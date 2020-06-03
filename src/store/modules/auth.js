@@ -36,4 +36,3 @@ const mutations = {
 
 export default { state, getters, actions, mutations}
 
-"https://api.imgur.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=REQUESTED_RESPONSE_TYPE&state=APPLICATION_STATE"
