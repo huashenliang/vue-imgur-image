@@ -9,10 +9,18 @@ const getters = {
 };
 
 const actions = {
-  async fetchImages({rootState}) {
-    const {token} = rootState.auth
-    const response = await api.fetchImages(token)
-    console.log(response)
+  async fetchImages({rootState, commit}) {
+    const {token} = rootState.auth;
+    const response = await api.fetchImages(token);
+    commit('setImages', response.data.data)
+  },
+
+  async updateImages({commit}, images) {
+    //GET the access token
+
+    //call API to do the upload
+
+    //Redirect to Imagelist component
   }
 };
 
