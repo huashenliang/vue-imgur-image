@@ -1,7 +1,7 @@
 <template>
     <div>
       <AppHeader />
-      <div class="ui container">
+      <div class="container">
         <router-view />
       </div>
     </div>
@@ -19,5 +19,8 @@ export default {
 </script>
 
 <style>
-
+.container{
+  padding-left: 5%;
+  padding-right: 5%;
+}
 </style>
